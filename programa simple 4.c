@@ -5,19 +5,17 @@ Tarea 2 Programa simple 4*/
 
 int main()
 {
-  int N;
-  int i;
-  int producto = 1;
+  float cantidad, tasa, monto;
 
-  printf("Dame el valor de N: ");
-  scanf("%d", &N);
+  printf("Dame la cantidad a invertir: ");
+  scanf("%f", &cantidad);
 
-  for(i = 1 ; i <= N ; i++)
-  {
-    producto = producto * i;
-  }
+  printf("Dame la tasa de interes mensual: ");
+  scanf("%f", &tasa);
 
-  printf("El producto es: %d\n", producto);
+  monto = cantidad + (cantidad * tasa);
+
+  printf("El monto al finalizar el mes es: %f\n", monto);
 
   return 0;
 }
